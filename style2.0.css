@@ -1,0 +1,77 @@
+:root{
+    --cor-primaria: rgb(0, 0, 0);
+    --cor-secundaria: rgb(253, 228, 0);
+    --cor-fundo:rgb(0, 0, 0);
+    --cor-destaque:rgb(255, 255, 255);
+
+    --fonte-primaria:'Helvetica';
+    --tamanho-fonte-titulo:16px;
+    --cor-texto:#ffffff;
+}
+body,h1,h2,h3,p{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-fundo);
+    color:var(--cor-texto);
+    text-align: center;
+}
+header{
+    background-color: var(--cor-secundaria);
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+header h1 strong{
+    color: var(--cor-primaria);
+    font-family:Helvetica;
+    -webkit-text-stroke: 1px var(--cor-destaque);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li a hover{
+    color: rgb(119, 0, 255);
+}
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+main section article{
+    margin:20px 0px 20px 0px;
+}
+main section article figure{
+    border: 2px solid var(--cor-texto);
+    width: 300px;
+    margin: auto;
+    margin: auto;
+    border-radius: 10%;
+    overflow: hidden;
+}
+main section article figure img{
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+main section article figure:hover img{
+    transform: scale(1.2);
+}
+section{
+    max-width: 750px;
+	margin: 60px auto 120px auto;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 20px;
+	box-shadow: 0 5px 8px -5px rgba(0,0,0,.2);
+}
+.sobre{
+    margin-top: 100px;
+}
